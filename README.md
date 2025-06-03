@@ -29,7 +29,7 @@ This R script processes a logbook Excel file by grouping related questions, assi
 2. Run the R function:
 
 ```r
-process_logs("./input/Master_logs.xlsx", "./input/checks.xlsx")
+process_logs("./input/Master_logs.xlsx", question_list)
 ```
 
 The result will be saved in ./output/Master_logs.xlsx with grouped and color-highlighted log entries.
