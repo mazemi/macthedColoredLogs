@@ -1,0 +1,8 @@
+library(openxlsx)
+source("./R/add_color_to_logs.R")
+
+# load original log without matched color and list of match variables (question)
+log_file <- "./input/Master_logs.xlsx"
+questions <- read.xlsx("./input/checks.xlsx")
+
+make_colorful_log(log_file, questions)
